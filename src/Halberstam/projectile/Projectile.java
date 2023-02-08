@@ -1,16 +1,16 @@
-package Halberstam.Projectile;
+package Halberstam.projectile;
 
 public class Projectile
 {
     private final double angle;
-    private final double v;
+    private final double velocity;
     private double radianAngle;
     private double time;
 
-    public Projectile(double angle, double v)
+    public Projectile(double angle, double velocity)
     {
         this.angle = angle;
-        this.v = v;
+        this.velocity = velocity;
         radianAngle = Math.toRadians(angle);
         time = 0;   // time should always start at 0
     }
@@ -19,8 +19,8 @@ public class Projectile
         return time;
     }
 
-    public double getV() {
-        return v;
+    public double getVelocity() {
+        return velocity;
     }
 
     public double getAngle() {
@@ -35,12 +35,12 @@ public class Projectile
     public double getX()
     {
 
-        return Math.cos(radianAngle) * v * time;
+        return Math.cos(radianAngle) * velocity * time;
     }
 
     public double getY()
     {
-        return Math.sin(radianAngle) * v * time - .5 * 9.8 * Math.pow(time,2);
+        return Math.sin(radianAngle) * velocity * time - .5 * 9.8 * (time*time);
     }
 
 

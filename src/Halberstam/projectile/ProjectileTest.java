@@ -1,4 +1,4 @@
-package Halberstam.Projectile;
+package Halberstam.projectile;
 
 import org.junit.jupiter.api.Test;
 

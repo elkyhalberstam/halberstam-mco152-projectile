@@ -1,6 +1,4 @@
-package Halberstam.Projectile;
-
-import Halberstam.Projectile.Projectile;
+package Halberstam.projectile;
 
 public class Main {
 
