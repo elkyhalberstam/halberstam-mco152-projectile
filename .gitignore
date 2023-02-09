@@ -1,2 +1,5 @@
 .idea/
-out/gi
+out/
+.gradle/
+build/
+.DS_STORE
